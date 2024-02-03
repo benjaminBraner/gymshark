@@ -13,7 +13,7 @@
 <body>
      <nav class="navbar navbar--shadow">
           <div class="navbar__container">
-               <a href="/" id="navbar__logo"><img src="assets/gs-icon-black.svg" alt="">Gymshark</a>
+               <a href="#home" id="navbar__logo"><img src="assets/gs-icon-black.svg" alt="">Gymshark</a>
                <div class="navbar__toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -47,8 +47,12 @@
                     <p class="main__desc">
                          A new fit = another excuse to go gym. Just let us know what we’re training first.
                     </p>
-                    <button class="shop-men-btn main__btn">SHOP MEN</button>
-                    <button class="main__btn shop-women-btn">SHOP WOMEN</button>
+                    <button class="shop-men-btn main__btn">
+                         <a href="#catalog">SHOP MEN</a>
+                    </button>
+                    <button class="main__btn shop-women-btn">
+                         <a href="#catalog">SHOP WOMEN</a>
+                    </button>
                </div>
                <div class="main__img--container">
                     <img src="assets/header.png" alt="" id="main__img">
@@ -69,38 +73,40 @@
                     <p class="available-p">
                          Available on Store
                     </p>
-                    <button class="shop-now-btn">SHOP NOW</button>
+                    <button class="new-collection-btn">
+                         <a href="#catalog">Shop Now</a>
+                    </button>
                </div>
           </div>
      </section>
 
-     <section class='services'>
+     <section class='cards'>
 
           <h1>Want to see what all the talk is about</h1>
 
-          <div class='services__container'>
+          <div class='cards__container'>
 
-               <div class='plant-card'>
+               <div class='card'>
                     <img alt={id} src="assets/sale-1.png" />
-                    <div class='plant__features'>
+                    <div class='card__features'>
                          <div class='features'>
                               <h2>MEN</h2>
                               <p>SALE 40% OFF</p>
-                              <button>
-                                   Shop Now
+                              <button class="men-card-btn">
+                                   <a href="#catalog">Shop Now</a>
                               </button>
                          </div>
                     </div>
                </div>
 
-               <div class='plant-card'>
+               <div class='card'>
                     <img alt={id} src="assets/sale-2.jpg" />
-                    <div class='plant__features'>
+                    <div class='card__features'>
                          <div class='features'>
                               <h2>WOMEN</h2>
                               <p>SALE 25% OFF</p>
-                              <button>
-                                   Shop Now
+                              <button class="women-card-btn">
+                                   <a href="#catalog">Shop Now</a>
                               </button>
                          </div>
                     </div>
@@ -112,75 +118,157 @@
      <section class="catalog" id="catalog">
           <h2 class="section__title">Must Have</h2>
           <div class="musthave__nav">
-               <a>WOMEN</a>
-               <a>MEN</a>
-               <a>ACCESSORIES</a>
+               <a id="allBtn" class="a link-active">ALL</a>
+               <a id="menBtn" class="a">MEN</a>
+               <a id="womenBtn" class="a">WOMEN</a>
           </div>
 
           <div class="musthave__grid">
-               <div class="musthave__card">
+               <div class="musthave__card men">
                     <img src="assets/collection.png" alt="must have" class="catalog-img" />
                     <h4>Compression gym T-shirt</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$75.00</del> $45.00</p>
                </div>
-               <div class="musthave__card">
+               <div class="musthave__card women">
+                    <img src="assets/sale-2.jpg" alt="must have" class="catalog-img" />
+                    <h4>Women's compression set</h4>
+                    <p><del>$120.00</del> $99.00</p>
+               </div>
+               <div class="musthave__card men">
                     <img src="assets/header.png" alt="must have" class="catalog-img" />
                     <h4>Compression gym T-shirt</h4>
                     <p><del>$45.00</del> $75.00</p>
                </div>
-               <div class="musthave__card">
-                    <img src="assets/sale-1.png" alt="must have" class="catalog-img" />
-                    <h4>Long-sleeve</h4>
-                    <p><del>$45.00</del> $75.00</p>
-               </div>
-               <div class="musthave__card">
-                    <img src="assets/sale-2.jpg" alt="must have" class="catalog-img" />
-                    <h4>Women's compression set</h4>
-                    <p><del>$45.00</del> $75.00</p>
-               </div>
-               <div class="musthave__card">
+               <div class="musthave__card women">
                     <img src="assets/calza.jpg" alt="must have" class="catalog-img" />
                     <h4>Women's gym leggings</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$45.00</del> $39.00</p>
                </div>
-               <div class="musthave__card">
+               <div class="musthave__card men">
+                    <img src="assets/sale-1.png" alt="must have" class="catalog-img" />
+                    <h4>Long-sleeve</h4>
+                    <p><del>$83.00</del> $50.00</p>
+               </div>
+               <div class="musthave__card women">
                     <img src="assets/cam3.png" alt="must have" class="catalog-img" />
                     <h4>Women's short gym leggings</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$45.00</del> $35.00</p>
                </div>
-               <div class="musthave__card">
+               <div class="musthave__card men">
                     <img src="assets/man-tshirt.png" alt="must have" class="catalog-img" />
                     <h4>Boxy-fit T-shirt</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$70.00</del> $49.00</p>
                </div>
-               <div class="musthave__card">
-                    <img src="assets/man-tshirt-2.png" alt="must have" class="catalog-img" />
-                    <h4>Compression gym T-shirt</h4>
-                    <p><del>$45.00</del> $75.00</p>
-               </div>
-               <div class="musthave__card">
+               <div class="musthave__card women">
                     <img src="assets/women-1.jpg" alt="must have" class="catalog-img" />
                     <h4>Crop top & shorts set</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$95.00</del> $75.00</p>
                </div>
-               <div class="musthave__card">
-                    <img src="assets/man-2.jpg" alt="must have" class="catalog-img" />
-                    <h4>Sleeveless gym shirt</h4>
-                    <p><del>$45.00</del> $75.00</p>
+               <div class="musthave__card men">
+                    <img src="assets/man-tshirt-2.png" alt="must have" class="catalog-img" />
+                    <h4>Compression gym T-shirt</h4>
+                    <p><del>$75.00</del> $45.00</p>
                </div>
-               <div class="musthave__card">
+               <div class="musthave__card women">
                     <img src="assets/woman-3.jpg" alt="must have" class="catalog-img" />
                     <h4>Gym hoodie</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$99.00</del> $68.00</p>
                </div>
-               <div class="musthave__card">
+               <div class="musthave__card men">
+                    <img src="assets/man-2.jpg" alt="must have" class="catalog-img" />
+                    <h4>Sleeveless gym shirt</h4>
+                    <p><del>$45.00</del> $36.00</p>
+               </div>
+               <div class="musthave__card women">
                     <img src="assets/woman-5.jpg" alt="must have" class="catalog-img" />
                     <h4>Crop top & leggings set</h4>
-                    <p><del>$45.00</del> $75.00</p>
+                    <p><del>$120.00</del> $79.00</p>
                </div>
           </div>
-
      </section>
+
+     <section id="testimonials">
+          <div class="testimonials-heading">
+               <span class="title-section">Testimonials</span>
+          </div>
+
+          <div class="testimonial-box-container">
+               <div class="testimonial-box">
+                    <div class="box-top">
+                         <div class="profile">
+                              <div class="profile-img">
+                                   <img src="assets/img-1.jpg" alt="">
+                              </div>
+                              <div class="name-user">
+                                   <strong>Carla Arrieta</strong>
+                                   <span>@carlaarrietah</span>
+                              </div>
+                         </div>
+
+                    </div>
+                    <div class="client-comment">
+                         <p>Gymshark elevates my gym experience. The quality and comfort of their clothing, along with
+                              modern designs, motivate me in every workout. My go-to brand for exercise wear!</p>
+                    </div>
+               </div>
+               <div class="testimonial-box">
+                    <div class="box-top">
+                         <div class="profile">
+                              <!--img---->
+                              <div class="profile-img">
+                                   <img src="assets/img-2.jpg" />
+                              </div>
+                              <div class="name-user">
+                                   <strong>Jose Maria Arze</strong>
+                                   <span>@josema.eccommerce</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="client-comment">
+                         <p>Gymshark blends functionality and style. The clothing is not only durable and comfortable
+                              but also has a modern design. My workouts have never been so comfortable and stylish.</p>
+                    </div>
+               </div>
+               <div class="testimonial-box">
+                    <div class="box-top">
+                         <div class="profile">
+                              <div class="profile-img">
+                                   <img src="assets/img-3.jpg" />
+                              </div>
+                              <div class="name-user">
+                                   <strong>Ariana Aranibar</strong>
+                                   <span>@ariss.priv</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="client-comment">
+                         <p>Exceptional customer service and fast shipping. In addition to the quality of Gymshark's
+                              clothing, their customer service is fast and efficient. Fast shipping and a brand that
+                              cares about its customers.</p>
+                    </div>
+               </div>
+               <div class="testimonial-box">
+                    <div class="box-top">
+                         <div class="profile">
+                              <div class="profile-img">
+                                   <img src="assets/img-4.jpg" />
+                              </div>
+                              <div class="name-user">
+                                   <strong>Fabian Pando</strong>
+                                   <span>@fbnpablo.priv</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="client-comment">
+                         <p>Gymshark offers variety and versatility. I always find what I need, whether it's for
+                              weightlifting or yoga. The versatility in their collections allows me to adapt my style to
+                              different activities. Very satisfied with the brand!</p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
      <section class="faqs" id="faqs">
           <h2 class="faqs-title">FAQs</h2>
           <div class="faq">
@@ -225,13 +313,12 @@
           </div>
           <div class="faq">
                <div class="question">
-                    <h3>What is javascript?</h3>
+                    <h3>How can I track my order?</h3>
                     <img class="faq-img" src="assets/plus.svg" alt="">
                </div>
                <div class="answer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis, possimus
-                         necessitatibus, odio temporibus quasi aspernatur minus a consectetur corrupti cumque nam harum
-                         reprehenderit eaque praesentium dolor rerum, ipsam voluptatum!</p>
+                    <p>Once your order is shipped, you'll receive an email with a tracking link. Click on the link to
+                         monitor the current status and location of your package.</p>
                </div>
           </div>
 
